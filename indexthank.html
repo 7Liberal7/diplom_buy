@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Diplom.ru</title>
+</head>
+
+<body class="body">
+  <div class="mob-menu">
+    <div class="mob-menu__wrapper">
+      <span class="mob-menu__close">
+        <span class="mob-menu__close1"></span>
+        <span class="mob-menu__close2"></span>
+      </span>
+      <ul class="header__list header__list--mob">
+        <li class="header__item header__item--acitve">
+          <a href="index.html" class="header__link">Купить дипломы</a>
+        </li>
+        <li class="header__item">
+          <a href="price1.html" class="header__link">ЦЕНЫ</a>
+        </li>
+        <li class="header__item">
+          <a href="garantia.html" class="header__link">ГАРАНТИИ КАЧЕСТВА</a>
+        </li>
+        <li class="header__item">
+          <a href="dostavka.html" class="header__link">ДОСТАВКА И ОПЛАТА</a>
+        </li>
+        <li class="header__item">
+          <a href="contacts.html" class="header__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+      <ul class="header__list-social header__list-social--mob">
+        <li class="header__list-social-item">
+          <a href="#" class="header__list-social-link">
+            <img src="images/viber.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="#" class="header__list-social-link">
+            <img src="images/mail.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="#" class="header__list-social-link">
+            <img src="images/whatsapp.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="#" class="header__list-social-link">
+            <img src="images/telegram.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="#" class="header__list-social-link">
+            <img src="images/phone.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+      </ul>
+      <button class="btn btn-diplom1">
+        ЗАКАЗАТЬ ДИПЛОМ
+      </button>
+      <button class="btn btn--white btn-phone1">
+        ЗАКАЗАТЬ ЗВОНОК
+      </button>
+    </div>
+  </div>
+  <div class="modal modal1">
+    <div class="modal__wrapper">
+      <span class="modal__close modal__close1">
+        <span class="modal__close-line-1"></span>
+        <span class="modal__close-line-2"></span>
+      </span>
+      <div class="modal__wrapper-top">
+        <p class="modal__wrapper-title">Заказать звонок</p>
+        <p class="modal__wrapper-text">Появились вопросы? Наши специалисты с удовольствием на них ответят</p>
+      </div>
+      <form action="telegram.php" class="form" method="POST">
+        <label class="form__label" for="name1">Ваше имя</label>
+        <input class="form__input" type="text" placeholder="Имя" name="name1" id="name1">
+        <label class="form__label" for="phone1">Ваш номер</label>
+        <input class="form__input" type="text" placeholder="Номер телефона" name="phone1" id="phone1">
+        <button class="btn btn-ready1" type="submit">ОТПРАВИТЬ</button>
+        <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+          соглашаетесь
+          c <a href="#">политикой конфиденциальности</a></p>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal2">
+    <div class="modal__wrapper">
+      <span class="modal__close modal__close2">
+        <span class="modal__close-line-1"></span>
+        <span class="modal__close-line-2"></span>
+      </span>
+      <div class="modal__wrapper-top">
+        <p class="modal__wrapper-title">Заказать документ</p>
+        <p class="modal__wrapper-text">Заполните форму ниже и мы свяжемся с вами для обсуждения всех деталей</p>
+      </div>
+      <form action="telegram2.php" class="form" method="POST">
+        <label class="form__label" for="name2">Ваше имя</label>
+        <input class="form__input" type="text" placeholder="Имя" name="name2" id="name2">
+        <label class="form__label" for="phone2">Ваш номер</label>
+        <input class="form__input" type="text" placeholder="Номер телефона" name="phone2" id="phone2">
+        <label class="form__label" for="queston2">Какой документ вас интересует?</label>
+        <textarea class="form__textarea" type="text" name="queston2" id="queston2"
+          placeholder="Например, диплом о высшем образовании"></textarea>
+        <button class="btn btn-ready2" type="submit">ОТПРАВИТЬ</button>
+        <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+          соглашаетесь
+          c <a href="#">политикой конфиденциальности</a></p>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal3 modal--active">
+    <div class="modal__wrapper">
+      <span class="modal__close modal__close3">
+        <span class="modal__close-line-1"></span>
+        <span class="modal__close-line-2"></span>
+      </span>
+      <div class="modal__wrapper-top modal__wrapper-top--big">
+        <img src="images/ready.svg" alt="" class="modal__wrapper-top-img" width="110" height="110">
+        <p class="modal__wrapper-title modal__wrapper-title--big">Спасибо, ваша заявка принята!</p>
+        <p class="modal__wrapper-text">Мы свяжемся с вами в ближайщее время</p>
+        <button class="btn btn-back">ВЕРНУТЬСЯ НА САЙТ</button>
+      </div>
+    </div>
+  </div>
+  <div class="black black--active">
+    <div class="first-ds">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <span class="header__btn">
+              <span class="header__btn1"></span>
+              <span class="header__btn2"></span>
+              <span class="header__btn3"></span>
+            </span>
+            <ul class="header__list">
+              <li class="header__item header__item--acitve">
+                <a href="index.html" class="header__link">Купить дипломы</a>
+              </li>
+              <li class="header__item">
+                <a href="price1.html" class="header__link">ЦЕНЫ</a>
+              </li>
+              <li class="header__item">
+                <a href="garantia.html" class="header__link">ГАРАНТИИ КАЧЕСТВА</a>
+              </li>
+              <li class="header__item">
+                <a href="dostavka.html" class="header__link">ДОСТАВКА И ОПЛАТА</a>
+              </li>
+              <li class="header__item">
+                <a href="contacts.html" class="header__link">КОНТАКТЫ</a>
+              </li>
+            </ul>
+            <button href="#" class="btn btn--header btn-diplom2">Заказать диплом</button>
+            <ul class="header__list-social header__list-social--header">
+              <li class="header__list-social-item">
+                <a href="#" class="header__list-social-link">
+                  <img src="images/viber.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="#" class="header__list-social-link">
+                  <img src="images/mail.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="#" class="header__list-social-link">
+                  <img src="images/whatsapp.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="#" class="header__list-social-link">
+                  <img src="images/telegram.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="#" class="header__list-social-link">
+                  <img src="images/phone.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="first-ds__bg" style=" background-image: url(images/fs-dp.jpg);">
+        <div class="first-ds__wrapper">
+          <div class="container">
+            <div class="first-ds__content">
+              <div class="first-ds__content-left">
+                <!-- <a href="#"> -->
+                <img src="images/logo-f.svg" class="first-ds__content-left-img" alt="" width="103" height="77">
+                <h1 class="first-ds__content-text">
+                  Санкт-Петербургская дистанционная общеобразовательная академия
+                </h1>
+                <!-- </a> -->
+              </div>
+              <div class="first-ds__right">
+                <p class="first-ds__right-text">
+                  Дипломы на заказ по всей России
+                </p>
+                <button class="btn btn--f btn-diplom3">
+                  ЗАКАЗАТЬ ДИПЛОМ
+                </button>
+                <button class="btn btn--f btn--white btn-phone2">
+                  ЗАКАЗАТЬ ЗВОНОК
+                </button>
+                <ul class="header__list-social header__list-social--main">
+                  <li class="header__list-social-item">
+                    <a href="#" class="header__list-social-link">
+                      <img src="images/viber.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="#" class="header__list-social-link">
+                      <img src="images/mail.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="#" class="header__list-social-link">
+                      <img src="images/whatsapp.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="#" class="header__list-social-link">
+                      <img src="images/telegram.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="#" class="header__list-social-link">
+                      <img src="images/phone.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <main class="main">
+      <section class="price price--adaptive">
+        <div class="container">
+          <h2 class="title">Цены на дипломы</h2>
+          <ul class="price__list">
+            <li class="price__item">
+              <img src="images/price/1.jpg" alt="" class="price__item-img" width="162" height="119">
+              <p class="price__item-text">Диплом о высшем образовании</p>
+              <p class="price__item-price">От 16 000 ₽</p>
+              <button class="btn btn900">ЗАКАЗАТЬ</button>
+            </li>
+            <li class="price__item">
+              <img src="images/price/2.jpg" alt="" class="price__item-img" width="162" height="119">
+              <p class="price__item-text">Диплом о средне-
+                спец. образовании</p>
+              <p class="price__item-price">От 16 000 ₽</p>
+              <button class="btn btn901">ЗАКАЗАТЬ</button>
+            </li>
+            <li class="price__item">
+              <img src="images/price/3.jpg" alt="" class="price__item-img" width="162" height="119">
+              <p class="price__item-text">Аттестат о среднем образовании</p>
+              <p class="price__item-price">От 16 000 ₽</p>
+              <button class="btn btn902">ЗАКАЗАТЬ</button>
+            </li>
+            <li class="price__item">
+              <img src="images/price/4.jpg" alt="" class="price__item-img" width="162" height="119">
+              <p class="price__item-text">Медицинские документы</p>
+              <p class="price__item-price">От 15 000 ₽</p>
+              <button class="btn btn903">ЗАКАЗАТЬ</button>
+            </li>
+            <li class="price__item">
+              <img src="images/price/5.jpg" alt="" class="price__item-img" width="162" height="119">
+              <p class="price__item-text">Прочие документы
+              </p>
+              <p class="price__item-price">От 8 000 ₽</p>
+              <button class="btn btn904">ЗАКАЗАТЬ</button>
+            </li>
+          </ul>
+          <a class="btn btn--white2" href="price1.html">СМОТРЕТЬ ВСЕ ЦЕНЫ</a>
+        </div>
+      </section>
+      <section class="benefits section">
+        <div class="container">
+          <h2 class="title">Наши преимущества</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item benefits__item1">
+              <img src="images/benefits/1.svg" alt="" class="benefits__item-img" width="100" height="100">
+              <p class="benefits__item-text">Нотариальный перевод документов</p>
+              <p class="benefits__item-text benefits__item-text1">Заверение в министерство юстиций</p>
+            </li>
+            <li class="benefits__item">
+              <img src="images/benefits/2.svg" alt="" class="benefits__item-img" width="100" height="100">
+              <p class="benefits__item-text">Качество важнее количества</p>
+            </li>
+            <li class="benefits__item">
+              <img src="images/benefits/3.svg" alt="" class="benefits__item-img" width="100" height="100">
+              <p class="benefits__item-text">Доставка по всей России</p>
+            </li>
+            <li class="benefits__item">
+              <img src="images/benefits/4.svg" alt="" class="benefits__item-img" width="100" height="100">
+              <p class="benefits__item-text">Оплата при получении</p>
+            </li>
+            <li class="benefits__item">
+              <img src="images/benefits/5.svg" alt="" class="benefits__item-img" width="100" height="100">
+              <p class="benefits__item-text">Конфиден-
+                циальность</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="info-text section">
+        <div class="container">
+          <h2 class="title">
+            Диплом с занесением в архив вуза
+          </h2>
+          <p class="info-text__text">
+            У нас вы можете купить диплом с занесением в ахвив вуза. Такой диплом пройдет любые проверки организаций со
+            строгим контролем. Сроки его исполнения - от четырех недель до нескольких месяцев, потому что делается все
+            официально и требует много времени на согласование. Стоимость обговаривается индивидуально, при консультации
+            со специалистом.
+            Вы самостоятельно подадите запрос в ВУЗ и только после того, как вы получите официальный ответ и убедитесь,
+            что диплом проведен, вы внесете оставшуюся часть оплаты.
+            Ваша фамилия будет фиксироваться в ведомостях ВУЗа, учебных архивах, что гарантирует вам прохождение любой
+            проверки (органы МВД и другие структуры)
+          </p>
+        </div>
+      </section>
+      <section class="instruction section">
+        <div class="container">
+          <h2 class="title">Как заказать диплом?</h2>
+          <ul class="instruction__list">
+            <li class="instruction__item">
+              <p class="instruction__item-number">1</p>
+              <p class="instruction__item-text">Вы оставляете заявку на сайте</p>
+            </li>
+            <li class="instruction__item">
+              <p class="instruction__item-number">2</p>
+              <p class="instruction__item-text">Менеджер связывается с вами для уточнения деталей</p>
+            </li>
+            <li class="instruction__item">
+              <p class="instruction__item-number">3</p>
+              <p class="instruction__item-text">Изготовление макета для утверждения</p>
+            </li>
+            <li class="instruction__item">
+              <p class="instruction__item-number">4</p>
+              <p class="instruction__item-text">Полная готовность документа</p>
+            </li>
+            <li class="instruction__item">
+              <p class="instruction__item-number instruction__item-number--last">5 </p>
+              <p class="instruction__item-text">Доставка документа; Оплата</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="container">
+          <h2 class="title title--white">Остались вопросы?</h2>
+          <p class="form-section__text">Оставьте заявку и мы свяжемся с вами</p>
+          <div class="form-section__wrapper">
+            <img src="images/students.png" alt="" class="form-section__img">
+            <form action="telegram3.php" class="form" method="POST">
+              <label class="form__label" for="name3">Ваше имя</label>
+              <input class="form__input" type="text" placeholder="Имя" name="name3" id="name3">
+              <label class="form__label" for="phone3">Ваш номер</label>
+              <input class="form__input" type="text" placeholder="Номер телефона" name="phone3" id="phone3">
+              <label class="form__label" for="queston3">Ваш вопрос</label>
+              <textarea class="form__textarea" type="text" name="queston3" id="queston3"
+                placeholder="Что вас интересует?"></textarea>
+              <button class="btn" type="submit">ОТПРАВИТЬ</button>
+              <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                соглашаетесь
+                c <a href="#">политикой конфиденциальности</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list-big">
+          <div class="footer__content-left">
+            <!-- <a href="#"> -->
+            <img src="images/logo-f.svg" class="footer__content-left-img" alt="" width="103" height="77">
+            <p class="footer__content-text">
+              Санкт-Петербургская дистанционная общеобразовательная академия
+            </p>
+            <!-- </a> -->
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Купить дипломы</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">ЦЕНЫ</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">ГАРАНТИИ КАЧЕСТВА</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">ДОСТАВКА И ОПЛАТА</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+          <div class="footer__info">
+            <p class="footer__info-text">КАК С НАМИ СВЯЗАТЬСЯ?</p>
+            <ul class="footer__list-social">
+              <li class="footer__list-social-item">
+                <a href="#" class="footer__list-social-link">
+                  <img src="images/viber.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="footer__list-social-item">
+                <a href="#" class="footer__list-social-link">
+                  <img src="images/mail.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="footer__list-social-item">
+                <a href="#" class="footer__list-social-link">
+                  <img src="images/whatsapp.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="footer__list-social-item">
+                <a href="#" class="footer__list-social-link">
+                  <img src="images/telegram.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="footer__list-social-item">
+                <a href="#" class="footer__list-social-link">
+                  <img src="images/phone.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+            <button class="btn btn--white btn-phone3">ЗАКАЗАТЬ ЗВОНОК</button>
+            <button class="btn btn-diplom4">ЗАКАЗАТЬ ДИПЛОМ</button>
+          </div>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
