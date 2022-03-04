@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Diplom.ru</title>
+</head>
+
+<html>
+
+<body class="body">
+
+  <div class="mob-menu">
+    <div class="mob-menu__wrapper">
+      <span class="mob-menu__close">
+        <span class="mob-menu__close1"></span>
+        <span class="mob-menu__close2"></span>
+      </span>
+      <ul class="header__list header__list--mob">
+        <li class="header__item">
+          <a href="index.html" class="header__link">Купить дипломы</a>
+        </li>
+        <li class="header__item">
+          <a href="price1.html" class="header__link">ЦЕНЫ</a>
+        </li>
+        <li class="header__item">
+          <a href="garantia.html" class="header__link">ГАРАНТИИ КАЧЕСТВА</a>
+        </li>
+        <li class="header__item">
+          <a href="dostavka.html" class="header__link">ДОСТАВКА И ОПЛАТА</a>
+        </li>
+        <li class="header__item header__item--acitve">
+          <a href="contacts.html" class="header__link">КОНТАКТЫ</a>
+        </li>
+      </ul>
+      <ul class="header__list-social header__list-social--mob">
+        <li class="header__list-social-item">
+          <a href="https://viber.click/79811937383" class="header__list-social-link">
+            <img src="images/viber.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="Mailto:diplom24zakaz@gmail.ru" class="header__list-social-link">
+            <img src="images/mail.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="https://api.whatsapp.com/send/?phone=79811937383&text&app_absent=0" class="header__list-social-link">
+            <img src="images/whatsapp.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="http://telegram.im/profofm75" class="header__list-social-link">
+            <img src="images/telegram.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+        <li class="header__list-social-item">
+          <a href="tel:+79811937383" class="header__list-social-link">
+            <img src="images/phone.svg" class="header__list-social-img" alt="" width="30" height="30">
+          </a>
+        </li>
+      </ul>
+      <button class="btn btn-diplom1">
+        ЗАКАЗАТЬ ДИПЛОМ
+      </button>
+      <button class="btn btn--white btn-phone1">
+        ЗАКАЗАТЬ ЗВОНОК
+      </button>
+    </div>
+  </div>
+  <div class="modal modal1">
+    <div class="modal__wrapper">
+      <span class="modal__close modal__close1">
+        <span class="modal__close-line-1"></span>
+        <span class="modal__close-line-2"></span>
+      </span>
+      <div class="modal__wrapper-top">
+        <p class="modal__wrapper-title">Заказать звонок</p>
+        <p class="modal__wrapper-text">Появились вопросы? Наши специалисты с удовольствием на них ответят</p>
+      </div>
+      <form action="telegramcontacts1.php" class="form" method="POST">
+        <label class="form__label" for="name1">Ваше имя</label>
+        <input class="form__input" type="text" placeholder="Имя" name="name1" id="name1">
+        <label class="form__label" for="phone1">Ваш номер</label>
+        <input class="form__input" type="text" placeholder="Номер телефона" name="phone1" id="phone1">
+        <button class="btn btn-ready1" type="submit">ОТПРАВИТЬ</button>
+        <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+          соглашаетесь
+          c <a href="#">политикой конфиденциальности</a></p>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal2">
+    <div class="modal__wrapper">
+      <span class="modal__close modal__close2">
+        <span class="modal__close-line-1"></span>
+        <span class="modal__close-line-2"></span>
+      </span>
+      <div class="modal__wrapper-top">
+        <p class="modal__wrapper-title">Заказать документ</p>
+        <p class="modal__wrapper-text">Заполните форму ниже и мы свяжемся с вами для обсуждения всех деталей</p>
+      </div>
+      <form action="telegramcontacts2.php" class="form" method="POST">
+        <label class="form__label" for="name2">Ваше имя</label>
+        <input class="form__input" type="text" placeholder="Имя" name="name2" id="name2">
+        <label class="form__label" for="phone2">Ваш номер</label>
+        <input class="form__input" type="text" placeholder="Номер телефона" name="phone2" id="phone2">
+        <label class="form__label" for="queston2">Какой документ вас интересует?</label>
+        <textarea class="form__textarea" type="text" name="queston2" id="queston2"
+          placeholder="Например, диплом о высшем образовании"></textarea>
+        <button class="btn btn-ready2" type="submit">ОТПРАВИТЬ</button>
+        <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+          соглашаетесь
+          c <a href="#">политикой конфиденциальности</a></p>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal3">
+    <div class="modal__wrapper">
+      <span class="modal__close modal__close3">
+        <span class="modal__close-line-1"></span>
+        <span class="modal__close-line-2"></span>
+      </span>
+      <div class="modal__wrapper-top modal__wrapper-top--big">
+        <img src="images/ready.svg" alt="" class="modal__wrapper-top-img" width="110" height="110">
+        <p class="modal__wrapper-title modal__wrapper-title--big">Спасибо, ваша заявка принята!</p>
+        <p class="modal__wrapper-text">Мы свяжемся с вами в ближайщее время</p>
+        <button class="btn btn-back">ВЕРНУТЬСЯ НА САЙТ</button>
+      </div>
+    </div>
+  </div>
+  <div class="black">
+    <div class="first-ds">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <span class="header__btn">
+              <span class="header__btn1"></span>
+              <span class="header__btn2"></span>
+              <span class="header__btn3"></span>
+            </span>
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="index.html" class="header__link">Купить дипломы</a>
+              </li>
+              <li class="header__item">
+                <a href="price1.html" class="header__link">ЦЕНЫ</a>
+              </li>
+              <li class="header__item">
+                <a href="garantia.html" class="header__link">ГАРАНТИИ КАЧЕСТВА</a>
+              </li>
+              <li class="header__item">
+                <a href="dostavka.html" class="header__link">ДОСТАВКА И ОПЛАТА</a>
+              </li>
+              <li class="header__item header__item--acitve">
+                <a href="contacts.html" class="header__link">КОНТАКТЫ</a>
+              </li>
+            </ul>
+            <button href="#" class="btn btn--header btn-diplom2">Заказать диплом</button>
+            <ul class="header__list-social header__list-social--header">
+              <li class="header__list-social-item">
+                <a href="https://viber.click/79811937383" class="header__list-social-link">
+                  <img src="images/viber.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="Mailto:diplom24zakaz@gmail.ru" class="header__list-social-link">
+                  <img src="images/mail.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="https://api.whatsapp.com/send/?phone=79811937383&text&app_absent=0"
+                  class="header__list-social-link">
+                  <img src="images/whatsapp.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="http://telegram.im/profofm75" class="header__list-social-link">
+                  <img src="images/telegram.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+              <li class="header__list-social-item">
+                <a href="tel:+79811937383" class="header__list-social-link">
+                  <img src="images/phone.svg" class="header__list-social-img" alt="" width="30" height="30">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="first-ds__bg" style=" background-image: url(images/fs-dp.jpg);">
+        <div class="first-ds__wrapper">
+          <div class="container">
+            <div class="first-ds__content">
+              <div class="first-ds__content-left">
+                <!-- <a href="#"> -->
+                <img src="images/logo-f.svg" class="first-ds__content-left-img" alt="" width="103" height="77">
+                <h1 class="first-ds__content-text">
+                  Санкт-Петербургская дистанционная общеобразовательная академия
+                </h1>
+                <!-- </a> -->
+              </div>
+              <div class="first-ds__right">
+                <p class="first-ds__right-text">
+                  Дипломы на заказ по всей России
+                </p>
+                <button class="btn btn--f btn-diplom3">
+                  ЗАКАЗАТЬ ДИПЛОМ
+                </button>
+                <button class="btn btn--f btn--white btn-phone2">
+                  ЗАКАЗАТЬ ЗВОНОК
+                </button>
+                <ul class="header__list-social header__list-social--main">
+                  <li class="footer__list-social-item">
+                    <a href="https://viber.click/79811937383" class="footer__list-social-link">
+                      <img src="images/viber.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="Mailto:diplom24zakaz@gmail.ru" class="header__list-social-link">
+                      <img src="images/mail.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="https://api.whatsapp.com/send/?phone=79811937383&text&app_absent=0"
+                      class="header__list-social-link">
+                      <img src="images/whatsapp.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="http://telegram.im/profofm75" class="header__list-social-link">
+                      <img src="images/telegram.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                  <li class="header__list-social-item">
+                    <a href="tel:+79811937383" class="header__list-social-link">
+                      <img src="images/phone.svg" class="header__list-social-img" alt="" width="30" height="30">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="black black2">
+      <main class="main">
+        <seaction class="contacts">
+          <div class="container">
+            <h2 class="title title-c1">Наши контакты:</h2>
+            <div class="contacts__wrapper">
+              <img src="images/contacts.jpg" alt="" class="contacts__wrapper-img" width="415" height="308">
+              <ul class="contacts__list">
+                <h2 class="title title-c2">Наши контакты:</h2>
+                <li class="contacts__item">
+                  <p class="contacts__item-text">
+                    WhatsApp:
+                  </p>
+                  <a href="https://api.whatsapp.com/send/?phone=79811937383&text&app_absent=0"
+                    class="contacts__item-link">
+                    +7 (981) 193-73-83
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__item-text">
+                    Telegram:
+                  </p>
+                  <a href="http://telegram.im/profofm75" class="contacts__item-link">
+                    @proform75
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__item-text">
+                    Почта:
+                  </p>
+                  <div class="contacts__item-wrap">
+                    <a href="Mailto:diplom24zakaz@gmail.ru" class="contacts__item-link">
+                      diplom24zakaz@gmail.ru
+                    </a>
+                    <a href="Mailto:diplom24zakaz@bk.ru" class="contacts__item-link">
+                      diplom24zakaz@bk.ru
+                    </a>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__item-text">
+                    Телефон:
+                  </p>
+                  <a href="tel:+79811937383" class="contacts__item-link">
+                    +7 (981) 193-73-83
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <p class="contacts__item-text">
+                    Viber:
+                  </p>
+                  <a href="https://viber.click/79811937383" class="contacts__item-link">
+                    +7 (981) 193-73-83
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </seaction>
+        <section class="form-section">
+          <div class="container">
+            <h2 class="title title--white">Остались вопросы?</h2>
+            <p class="form-section__text">Оставьте заявку и мы свяжемся с вами</p>
+            <div class="form-section__wrapper">
+              <img src="images/students.png" alt="" class="form-section__img">
+              <form action="telegramcontacts3.php" class="form" method="POST">
+                <label class="form__label" for="name3">Ваше имя</label>
+                <input class="form__input" type="text" placeholder="Имя" name="name3" id="name3">
+                <label class="form__label" for="phone3">Ваш номер</label>
+                <input class="form__input" type="text" placeholder="Номер телефона" name="phone3" id="phone3">
+                <label class="form__label" for="queston3">Ваш вопрос</label>
+                <textarea class="form__textarea" type="text" name="queston3" id="queston3"
+                  placeholder="Что вас интересует?"></textarea>
+                <button class="btn" type="submit">ОТПРАВИТЬ</button>
+                <p class="form__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+                  соглашаетесь
+                  c <a href="#">политикой конфиденциальности</a></p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer__list-big">
+            <div class="footer__content-left">
+              <!-- <a href="#"> -->
+              <img src="images/logo-f.svg" class="footer__content-left-img" alt="" width="103" height="77">
+              <p class="footer__content-text">
+                Санкт-Петербургская дистанционная общеобразовательная академия
+              </p>
+              <!-- </a> -->
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="index.html" class="footer__link">Купить дипломы</a>
+              </li>
+              <li class="footer__item">
+                <a href="price1.html" class="footer__link">ЦЕНЫ</a>
+              </li>
+              <li class="footer__item">
+                <a href="garantia.html" class="footer__link">ГАРАНТИИ КАЧЕСТВА</a>
+              </li>
+              <li class="footer__item">
+                <a href="dostavka.html" class="footer__link">ДОСТАВКА И ОПЛАТА</a>
+              </li>
+              <li class="footer__item">
+                <a href="contacts.html" class="footer__link">КОНТАКТЫ</a>
+              </li>
+            </ul>
+            <div class="footer__info">
+              <p class="footer__info-text">КАК С НАМИ СВЯЗАТЬСЯ?</p>
+              <ul class="footer__list-social">
+                <li class="footer__list-social-item">
+                <li class="footer__list-social-item">
+                  <a href="https://viber.click/79811937383" class="footer__list-social-link">
+                    <img src="images/viber.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                  </a>
+                </li>
+                <a href="Mailto:diplom24zakaz@gmail.ru" class="footer__list-social-link">
+                  <img src="images/mail.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                </a>
+                </li>
+                <li class="footer__list-social-item">
+                  <a href="https://api.whatsapp.com/send/?phone=79811937383&text&app_absent=0"
+                    class="footer__list-social-link">
+                    <img src="images/whatsapp.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                  </a>
+                </li>
+                <li class="footer__list-social-item">
+                  <a href="http://telegram.im/profofm75" class="footer__list-social-link">
+                    <img src="images/telegram.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                  </a>
+                </li>
+                <li class="footer__list-social-item">
+                  <a href="tel:+79811937383" class="footer__list-social-link">
+                    <img src="images/phone.svg" class="footer__list-social-img" alt="" width="30" height="30">
+                  </a>
+                </li>
+              </ul>
+              <button class="btn btn--white btn-phone3">ЗАКАЗАТЬ ЗВОНОК</button>
+              <button class="btn btn-diplom4">ЗАКАЗАТЬ ДИПЛОМ</button>
+            </div>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/maincontact.js"></script>
+</body>
+
+</html>
